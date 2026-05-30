@@ -1,0 +1,71 @@
+site_name: Classification des Déchets — YOLOv8
+site_description: Documentation académique du projet de classification d'images de déchets par vision par ordinateur avec YOLOv8
+site_author: Mohamed Ziani, Hamdi Maria
+site_url: https://project-computer-vision.readthedocs.io
+
+repo_name: project_computer_vision
+repo_url: https://github.com/votre-utilisateur/project_computer_vision
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: fr
+  palette:
+    - scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-7
+        name: Passer en mode sombre
+    - scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-4
+        name: Passer en mode clair
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Accueil: index.md
+  - Installation: installation.md
+  - Jeu de données: dataset.md
+  - Méthodologie: methodology.md
+  - Résultats: results.md
+  - Conclusion: conclusion.md
+
+plugins:
+  - search:
+      lang: fr
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/votre-utilisateur/project_computer_vision
